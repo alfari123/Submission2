@@ -10,7 +10,7 @@
         android:id="@+id/img_movies"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:contentDescription="image movies"
+        android:contentDescription="@string/image_movies"
         android:scaleType="centerCrop"
         android:src="@drawable/dummy_images"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,46 +25,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_name_movie"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:ellipsize="end"
-        android:maxLines="2"
-        android:text="Movie Name"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
-        android:layout_marginBottom="4dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
+        android:background="@color/dc_black_trans"
         app:layout_constraintBottom_toBottomOf="@+id/img_movies"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UseCompoundDrawables"
-        tools:viewBindingIgnore="true">
-
-        <ImageView
-            android:id="@+id/img_rating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="rating movies" />
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/tv_movie_item_rating"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_name_movie"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="rating movies"
-            android:textSize="12sp" />
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:textColor="@color/dc_white"
+            android:textSize="14sp"
+            android:fontFamily="@font/usual_bold"
+            android:maxLines="2"
+            android:text="@string/movie_name"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout" />
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_name_movie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UseCompoundDrawables"
+            tools:viewBindingIgnore="true">
+
+            <TextView
+                android:id="@+id/tv_movie_item_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rating_movies"
+                android:fontFamily="@font/usual_regular"
+                android:textColor="@color/dc_white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

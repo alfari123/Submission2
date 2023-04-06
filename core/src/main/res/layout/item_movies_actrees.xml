@@ -19,8 +19,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Dummy Actrees"
-        android:textStyle="bold"
+        android:text="@string/dummy_actrees"
+        android:textSize="14sp"
+        android:fontFamily="@font/usual_bold"
         app:layout_constraintBottom_toTopOf="@+id/space2"
         app:layout_constraintStart_toEndOf="@+id/img_actrees" />
 
@@ -38,7 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Dummy Movies"
+        android:text="@string/dummy_movies"
+        android:fontFamily="@font/usual_regular"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/img_actrees"
         app:layout_constraintTop_toBottomOf="@+id/space2" />
 

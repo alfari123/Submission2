@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_name">Movie Name</string>
+    <string name="rating_movies">rating movies</string>
+    <string name="image_movies">image movies</string>
+    <string name="dummy_actrees">Dummy Actrees</string>
+    <string name="dummy_movies">Dummy Movies</string>
+    <string name="movie_overview">movie overview</string>
+</resources>

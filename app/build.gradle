@@ -23,13 +23,18 @@ android {
         properties.load(project.rootProject.file('local.properties').newDataInputStream())
         buildConfigField 'String', 'API_KEY', '"ded4ba587252bb853c861e684a140451"'
         buildConfigField 'String', 'BASE_URL', '"https://api.themoviedb.org/3/"'
+        buildConfigField 'String', 'HOST_NAME', '"https://api.themoviedb.org"'
         buildConfigField 'String', 'URLS_IMG', '"https://image.tmdb.org/t/p/w300"'
         buildConfigField 'String', 'URLS_IMG_ORIGINAL', '"https://image.tmdb.org/t/p/original"'
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -94,4 +99,7 @@ dependencies {
 
     // Circle Image
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
+
 }

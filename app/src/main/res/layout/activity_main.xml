@@ -45,42 +45,56 @@
             <ImageView
                 android:id="@+id/img_movies"
                 android:layout_width="match_parent"
-                android:layout_height="560dp"
+                android:layout_height="350dp"
                 android:contentDescription="@string/headers_movies"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tv_name_movie"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/usual_regular"
-                android:text="Name Movie"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="32sp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_information"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:layout_height="100dp"
+                android:background="@color/dc_black_transparant"
+                app:layout_constraintBottom_toBottomOf="@+id/img_movies">
 
-            <TextView
-                android:id="@+id/tv_information"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginBottom="64dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/usual_regular"
-                android:maxLines="3"
-                android:text="Information"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/img_movies"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/img_movies" />
+                <TextView
+                    android:id="@+id/tv_name_movie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/usual_regular"
+                    android:text="@string/name_movie"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_information"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/usual_regular"
+                    android:maxLines="3"
+                    android:text="@string/information_movie"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name_movie" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/textView"
@@ -92,7 +106,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/img_movies"
+                app:layout_constraintTop_toBottomOf="@+id/constraint5"
                 tools:viewBindingIgnore="true" />
 
             <TextView
@@ -127,7 +141,7 @@
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/usual_regular"
                 android:textColor="@color/black"
-                android:text="Upcoming"
+                android:text="@string/upcoming"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rv_trending"
