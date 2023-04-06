@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Submission 1</string>
+    <string name="title_fav">Fav</string>
+    <string name="headers_home">headers home</string>
+    <string name="movie_not_found">Movie Not Found</string>
+    <string name="headers_movies">headers movies</string>
+    <string name="trending">Trending</string>
+    <string name="see_more">See More</string>
+    <string name="popular">Popular</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="overview">Overview</string>
+    <string name="actor">Actor</string>
+    <string name="save_to_favorite">Save to favorite</string>
+    <string name="delete_from_favorite">Delete from favorite</string>
+    <string name="error_data">Error data</string>
+    <string name="name_movie">Name Movie</string>
+    <string name="pencarian_movie">Pencarian Movie</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="invalid_data">Invalid data</string>
+</resources>

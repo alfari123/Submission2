@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#161B22</color>
+    <color name="dark_blue">#0D1013</color>
+    <color name="zeus">#221d16</color>
+    <color name="light_iron">#e8e8e9</color>
+    <color name="dark_iron">#bababa</color>
+    <color name="light_desert_storm">#e9e9e8</color>
+    <color name="dark_desert_storm">#DCDCDB</color>
+</resources>

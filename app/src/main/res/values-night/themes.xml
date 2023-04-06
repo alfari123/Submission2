@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Submission1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_iron</item>
+        <item name="colorPrimaryVariant">@color/dark_iron</item>
+        <item name="colorOnPrimary">@color/light_blue</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_desert_storm</item>
+        <item name="colorSecondaryVariant">@color/dark_desert_storm</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status & Navigation bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnPrimary</item>
+        <item name="android:navigationBarColor">@color/light_blue</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/light_blue</item>
+    </style>
+</resources>

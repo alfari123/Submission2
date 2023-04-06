@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:paddingHorizontal="24dp">
+
+    <ImageView
+        android:id="@+id/img_movies"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:contentDescription="image movies"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_movie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="dummy name movie"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_movies"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="rating movies"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_movie"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_movie" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="movies rating"
+        app:layout_constraintBottom_toBottomOf="@+id/img_rating"
+        app:layout_constraintStart_toEndOf="@+id/img_rating"
+        app:layout_constraintTop_toTopOf="@+id/img_rating" />
+
+    <TextView
+        android:id="@+id/tv_movie_item_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="movie overview"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name_movie"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_movie"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
