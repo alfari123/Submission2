@@ -26,17 +26,6 @@
 
 -keep public class * extends android.app.Activity
 
--keep public class * implements com.bumptech.glide.module.GlideModule
--keep class * extends com.bumptech.glide.module.AppGlideModule {
- <init>(...);
-}
--keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
-  **[] $VALUES;
-  public *;
-}
--keep class com.bumptech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder {
-  *** rewind();
-}
 
 -keepattributes Signature, InnerClasses, EnclosingMethod
 
@@ -54,7 +43,6 @@
 
 -dontwarn kotlin.Unit
 
--dontwarn retrofit2.KotlinExtensions
 -dontwarn retrofit2.KotlinExtensions$*
 -if interface * { @retrofit2.http.* <methods>; }
 -keep,allowobfuscation interface <1>
