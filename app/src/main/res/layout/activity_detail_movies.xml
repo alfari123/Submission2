@@ -29,6 +29,7 @@
             android:src="@drawable/ic_un_favorite"
             android:textOff=""
             android:textOn=""
+            android:contentDescription="@string/image_movies"
             tools:ignore="TouchTargetSizeCheck" />
 
     </androidx.appcompat.widget.Toolbar>

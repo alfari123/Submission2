@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.core.databinding.ItemHomeMoviesBinding
 import com.dicoding.core.domain.model.Movie
 import com.dicoding.core.utils.getImageOriginalUrl
-import com.dicoding.core.utils.getImageUrl
 import com.dicoding.core.utils.setImageFromUrl
 import com.google.android.flexbox.AlignItems
 import com.google.android.flexbox.FlexboxLayoutManager

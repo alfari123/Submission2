@@ -94,7 +94,6 @@ class MoviesRepository @Inject constructor(
         emit(Result.success(casts))
     }.catch { e ->
         emit(Result.failure(e))
-
     }
 
     override fun getMoviesByQuery(query: String): Flow<Result<List<Movie>>> = flow {
